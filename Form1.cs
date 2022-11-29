@@ -44,6 +44,7 @@ namespace lab_3_g
                 fileStream.WriteLine(s);
             }
             fileStream.Close();
+            MessageBox.Show($"Строки успешно записаны в файл strings.txt");
         }
 
         private string[] readFromFile(string filename)
@@ -67,7 +68,7 @@ namespace lab_3_g
 
             Font font1 = new Font("Imprint MT Shadow", 24, FontStyle.Regular);
             Font font2 = new Font("Arial Black", 18, FontStyle.Bold);
-            Font font3 = new Font("Corbel", 66, FontStyle.Italic);
+            Font font3 = new Font("Corbel", 1, FontStyle.Italic, GraphicsUnit.Inch);
 
             StringBuilder stringBuilder1 = new StringBuilder();
             StringBuilder stringBuilder2 = new StringBuilder();
